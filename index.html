@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-div">
+            <img src="img/icon.png" alt="Logo Alura" class="logo">
+            <div class="menu">
+                <div class="menu-item">PT</div>
+                <div class="menu-item-selected">ES</div>
+            </div>
+            <div class="menu">
+                <div class="menu-item-selected">
+                    <img src="img/icon-t.png" alt="T" class="icon">
+                </div>
+                <div class="menu-item">
+                    <img src="img/icon-head.png" alt="Cara" class="icon">
+                </div>
+            </div>
+        </div>
+        <div class="center-div">
+            <textarea id="original" class="original-text">Ingrese el texto aqui</textarea>            
+            <p class="warning"><img src="img/warning.png" alt="Warning"> Solo letras minusculas sin acentos</p>
+            <div class="button-container">
+                <button onclick="encript()" class="btn-encriptar">Encriptar</button>
+                <button onclick="decript()" class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-div">
+            <textarea id="encripted" class="decripted-text"></textarea>
+            <h2 id="tag_h2">Ningun mensaje fue encontrado</h2>
+            <p id="tag_p">Ingrese el texto que desee encriptar o desencriptar.</p>
+            <button id="copy" onclick="copy()" class="btn-desencriptar">Copiar</button>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html>
